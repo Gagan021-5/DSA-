@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "pattern",
+            "request": "launch",
+            "mainClass": "pattern",
+            "projectName": "DSA 2_692fbd3d"
+        },
+        {
+            "type": "java",
+            "name": "quicksort",
+            "request": "launch",
+            "mainClass": "quicksort",
+            "projectName": "DSA 2_692fbd3d"
+        },
+        {
+            "type": "java",
+            "name": "recrusionone",
+            "request": "launch",
+            "mainClass": "recrusionone",
+            "projectName": "DSA 2_692fbd3d"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "arraytoform",
+            "request": "launch",
+            "mainClass": "arraytoform",
+            "projectName": "DSA 2_692fbd3d"
+        },
+        {
+            "type": "java",
+            "name": "srec",
+            "request": "launch",
+            "mainClass": "srec",
+            "projectName": "DSA 2_692fbd3d"
+        },
+        {
+            "type": "java",
+            "name": "str",
+            "request": "launch",
+            "mainClass": "str",
+            "projectName": "DSA 2_692fbd3d"
+        }
+    ]
+}
