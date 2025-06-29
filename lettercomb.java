@@ -4,7 +4,6 @@ import java.util.List;
 public class lettercomb {
 
     public static void main(String[] args) {
-        keypad("", "12");
 
     }
 
@@ -32,7 +31,7 @@ public class lettercomb {
         for (int i = (val - 1) * 3; i < (val * 3); i++) {
             char ch = (char) ('a' + i);
 
-             newlist.addAll(letterCombinations(p + ch, up.substring(1)));
+            newlist.addAll(letterCombinations(p + ch, up.substring(1)));
         }
         return newlist;
     }
