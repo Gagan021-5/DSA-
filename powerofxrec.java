@@ -1,15 +1,11 @@
 public class powerofxrec {
 
     public static void main(String[] args) {
-
+         double val =  ispow(x,n);
     }
 
-    public double myPow(double x, int n) {
-      
-        return ispow(x, n);
-    }
 
-    static double ispow(double x, int n) {
+    static double ispow(double x, (long) n) {
         if (n == 0) {
             return 1;
         }
