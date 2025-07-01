@@ -1,8 +1,6 @@
 public class setmatrixzero {
 
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) {}
 
     public void setZeroes(int[][] matrix) {
         boolean fr = false;
