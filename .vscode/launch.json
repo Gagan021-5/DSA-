@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NQueens",
+            "request": "launch",
+            "mainClass": "NQueens",
+            "projectName": "DSA 2_692fbd3d"
+        },
+        {
+            "type": "java",
             "name": "pattern",
             "request": "launch",
             "mainClass": "pattern",
