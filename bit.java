@@ -1,13 +1,10 @@
 public class bit {
 
     public static void main(String[] args) {
-        int n = 67;
-        System.out.println(isodd(n));
+        int n = 6;
+        int ans = n & 1;
+        System.out.println(ans); 
     }
 
     
-
-    static boolean isodd(int n) {
-        return (n & 1) == 1;
-    }
 }
