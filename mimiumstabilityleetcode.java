@@ -9,7 +9,7 @@ public class mimiumstabilityleetcode {
 
         int hcf = nums[0];
         
-            public int hcfnumbers(int a ,int b){
+            public boole hcfnumbers(int a ,int b){
                         int temp = b;
                         b = a % b;
                         a = temp;
