@@ -2,16 +2,17 @@ package mypackage;
 
 public class Queuemain {
     public static void main(String[] args) throws Exception {
-        CustomQueue q = new CustomQueue(5);
-        q.insertQueue(5);
-        q.insertQueue(6);
-        q.insertQueue(8);
-        q.insertQueue(33);
+       CircularQueue cq = new CircularQueue(5);
+        cq.insertCircQueue(5);
+        cq.insertCircQueue(6);
+        cq.insertCircQueue(8);
+        cq.insertCircQueue(33);
 
-        q.display();
+        cq.display();
 
-        System.out.println(q.deleteQueue());
-        q.display();
+        System.out.println(cq.removecircqueue());
+        cq.insertCircQueue(133);
+        cq.display();
 }
 
 }
