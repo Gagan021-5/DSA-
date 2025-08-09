@@ -1,3 +1,5 @@
+
+
 class BST {
     private int value;
     private Node left;
@@ -34,29 +36,24 @@ class BST {
             return node;
         }
         if (val < node.value) {
-            node.left = insert(val, node.left); // recursively call the fxn
-
+            node.left = insert(val, node.left);
         } else {
             node.right = insert(val, node.right);
         }
         node.height = Math.max(height(node.left), height(node.right));
-
         return node;
-
-        public boolean balanced(){
-            return balanced(root);
-        }
-
-        private boolean balanced(Node node){
-            if(node == null) {return true;}
-        
-            return Math.abs(height(node.left)- height(node.right)<=1);-
-        }
-     
-
     }
 
+    public boolean balanced() {
+        return balanced(root);
+    }
 
+    private boolean balanced(Node node) {
+        if (node == null) {
+            return true;
+        }
+        return Math.abs(height(node.left) - height(node.right)) <= 1;
+    }
 
     public class Node {
         private int value;
@@ -72,7 +69,24 @@ class BST {
         }
     }
 
+    public void PreOrder(){
+      PreOrder(root);
+    }
+    private void PreOrder(Node node){
+        if(node== null) return;
+        System.out.println(node.value + " ");
+        PreOrder(node.left);
+        PreOrder(node.right);
+    }
+
+}
+
+
+public class PreOrder {
     public static void main(String[] args) {
+        BST b = new BST();
+        int[] arr = {1,35,6,7,8,8};
+
 
     }
 }
