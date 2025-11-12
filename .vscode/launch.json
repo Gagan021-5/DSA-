@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "climbingstairs",
+            "request": "launch",
+            "mainClass": "climbingstairs",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
+            "name": "AVLtree",
+            "request": "launch",
+            "mainClass": "AVLtree",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
+            "name": "BST",
+            "request": "launch",
+            "mainClass": "BST",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "PreOrder",
             "request": "launch",
             "mainClass": "PreOrder",
