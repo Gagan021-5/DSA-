@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "containsdupli",
+            "request": "launch",
+            "mainClass": "containsdupli",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
+            "name": "firsoccurence",
+            "request": "launch",
+            "mainClass": "firsoccurence",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
+            "name": "kadanealgo2",
+            "request": "launch",
+            "mainClass": "kadanealgo2",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "removeduplicatestring",
             "request": "launch",
             "mainClass": "removeduplicatestring",
