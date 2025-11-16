@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class quicksort {
 
@@ -8,32 +8,34 @@ public class quicksort {
         System.out.println(Arrays.toString(arr));
     }
 
-    static void quicksort(int[] arr, int low, int high) {
-        if (low >= high) {
+    public static void quicksort(int[] arr, int low, int high) {
+        if (low >= high)
             return;
-        }
-        int start = low;
-        int end = high;
-        int mid = start + (end - start) / 2;
-        int pivot = arr[mid];
+        int pivot = partiiton(arr, low, high);
+        quicksort(arr, low, pivot - 1);
+        quicksort(arr, pivot + 1, high);
 
-        while (start <= end) {
-            while (arr[start] < pivot) {
-                start++;
-            }
-            while (arr[end] > pivot) {
-                end--;
-            }
-            if (start <= end) {
-                int temp = arr[start];
-                arr[start] = arr[end];
-                arr[end] = temp;
-                start++;
-                end--;
+    }
+
+    public static int partiiton(int[] arr, int low, int high) {
+        int piv = arr[high];
+        int i = low - 1; // index -1 for swapping up with less value
+
+        for (int j = low; j < high; j++) {
+            if (arr[j] < piv) {
+                i++; // comes to valid pos
+                // then swap
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
-        quicksort(arr, low, end);
-        quicksort(arr, high, start);
+        // this will postion piv to correct pos
+        i++;
+        int temp = arr[i];
+        arr[i] = arr[high];
+        arr[high] = temp;
+        return i;
     }
 
 }

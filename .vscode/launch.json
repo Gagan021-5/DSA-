@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "mergesortt",
+            "request": "launch",
+            "mainClass": "mergesortt",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
+            "name": "quicksort",
+            "request": "launch",
+            "mainClass": "quicksort",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "containsdupli",
             "request": "launch",
             "mainClass": "containsdupli",
