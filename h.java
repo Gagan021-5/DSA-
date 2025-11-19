@@ -65,7 +65,7 @@ public Heap(){
             min = left;
         } else {
             min = right;
-        }
+        }headp
 
         if (min != idx) {
             swap(min, idx);
