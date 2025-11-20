@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "topkelement",
+            "request": "launch",
+            "mainClass": "topkelement",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "prorityqueue",
             "request": "launch",
             "mainClass": "prorityqueue",
