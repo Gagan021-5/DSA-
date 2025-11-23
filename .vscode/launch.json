@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Dynamicprogramming",
+            "request": "launch",
+            "mainClass": "Dynamicprogramming",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
+            "name": "fabnoaciirec",
+            "request": "launch",
+            "mainClass": "fabnoaciirec",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "topkelement",
             "request": "launch",
             "mainClass": "topkelement",
