@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "coinchange",
+            "request": "launch",
+            "mainClass": "coinchange",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "houserobber",
             "request": "launch",
             "mainClass": "houserobber",
