@@ -9,9 +9,9 @@ import java.util.*;
 
 public class removeduplicateinstr {
     public static void main(String[] args) {
-    String s = "abbaca";
-    String res = removeDuplicates(s);
-    System.out.println(res);
+        String s = "abbaca";
+        String res = removeDuplicates(s);
+        System.out.println(res);
     }
 
     public static String removeDuplicates(String s) {
@@ -20,16 +20,15 @@ public class removeduplicateinstr {
 
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if (!(stack.isEmpty()) && stack.peek() ==c ) {
+            if (!(stack.isEmpty()) && stack.peek() == c) {
                 stack.pop();
-            }else{
-                 stack.push(c);
+            } else {
+                stack.push(c);
             }
 
-           
         }
 
-        for(char c : stack){
+        for (char c : stack) {
             str = str.append(c);
 
         }

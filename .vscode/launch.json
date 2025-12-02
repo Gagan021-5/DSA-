@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "taskscheduler",
+            "request": "launch",
+            "mainClass": "taskscheduler",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "coinchange",
             "request": "launch",
             "mainClass": "coinchange",
