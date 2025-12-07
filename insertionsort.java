@@ -11,21 +11,17 @@ public class insertionsort {
 
     static void insertionSort(int[] arr) {
         int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = i + 1; j > 0; j--) {
-                if (arr[j] < arr[j - 1]) {
-                    swap(arr,j, j - 1);
-                } else {
-                    break;
-                }
+        for (int i = 1; i < n; i++) {
+            int temp = arr[i];
+            int j = i - 1;
+            while (j >= 0 && arr[j] > temp ) {
+                arr[j + 1] = arr[j];
+                j--;
+
+                arr[j + 1] = temp;
             }
         }
 
     }
 
-    static void swap(int[] arr,int x, int y) {
-        int temp = arr[y];
-        arr[y] = arr[x];
-        arr[x] = temp;
-    }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "insertionsort",
+            "request": "launch",
+            "mainClass": "insertionsort",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "Intersectionoftwoarr",
             "request": "launch",
             "mainClass": "Intersectionoftwoarr",
