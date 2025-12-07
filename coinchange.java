@@ -23,37 +23,35 @@ public class coinchange {
     }
 
     public static int coinChange(int[] coins, int amount) {
-        int[] dp = new int[coins.length + 1];
-        Arrays.fill(dp, -1);
-        int res = helper(coins, amount, dp);
-        if (res == Integer.MAX_VALUE) { // because the coins having infinite no of combinations
+
+        int result = helper(coins, amount);
+        if (result == Integer.MAX_VALUE) {
             return -1;
         }
+        return result;
 
     }
 
-    public static int helper(int[] arr, int target, int[] dp) {
+    public static int helper(int[] arr, int target) {
         int n = arr.length;
         if (target == 0) {
             return 0;
+
         }
+
         if (target < 0) {
             return Integer.MAX_VALUE;
         }
-
-        if (dp[n] != -1) {
-            return -1;
-        }
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < n; i++) {
-            int ans = helper(arr, target - arr[i], dp);
+            int ans = helper(arr, target - arr[i]);
             if (ans != Integer.MAX_VALUE) {
-                min = Math.min(min, 1 + ans);
+                ans = Math.min(min, 1 + ans);
             }
         }
-        dp[target] = min;
 
         return min;
 
     }
+
 }
