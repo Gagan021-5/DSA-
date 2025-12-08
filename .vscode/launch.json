@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "longestsubstringwithoutrepeatingchar",
+            "request": "launch",
+            "mainClass": "longestsubstringwithoutrepeatingchar",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
+            "name": "mergesort",
+            "request": "launch",
+            "mainClass": "mergesort",
+            "projectName": "DSA 2_bf21e200"
+        },
+        {
+            "type": "java",
             "name": "insertionsort",
             "request": "launch",
             "mainClass": "insertionsort",
